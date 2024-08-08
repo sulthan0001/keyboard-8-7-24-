@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive_keyboard</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .key{
+            border: 2px solid ;
+            width: 900px;
+            background-color:white;
+            display: flex;
+            flex-wrap: wrap;
+            /* column-gap: 2px; */
+            row-gap:-50px;
+            /* flex-grow: 3; */
+            justify-content: space-around;
+            text-align: center;
+            
+        }
+
+       
+        .esc{
+            border: 2px solid;
+            height: 30px;
+            width: 30px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+            text-align: center;
+            /* justify-content: center; */
+            /* position: relative; */
+        }
+        .f1,.f2,.f3,.f4,.f5,.f6,.f7,.f8,.f9,.f10,.f11,.f12{
+            border: 2px solid;
+            height: 30px;
+            width: 40px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+            text-align: center;
+           
+        }
+        .cap{
+            border: 2px solid;
+            height: 30px;
+            width: 40px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color:black;
+        }
+        .similer{
+            border: 2px solid;
+            height: 30px;
+            width: 40px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color:black;
+          text-align: center;
+        }
+        .div2{
+            /* border: 2px solid; */
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            row-gap: 5px;
+            /* flex-shrink: 2; */
+
+        }
+       
+        .similer{
+            height: 50px;
+            width: 50px;
+        }
+        .cl_1{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color:rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .cl_2{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .cl_3,.cl_4,.cl_4,.cl_5,.cl_6,.cl_7,.cl_8,.cl_9,.cl_0{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color:black;
+        }
+        .cl_under,.cl_equal{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color:black;
+        }
+        .cl_del{
+            border: 2px solid;
+            height: 50px;
+            width: 60px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color:black;
+        }
+        .div3{
+            display: flex;
+            justify-content: space-between;
+            gap: 9px;
+        }
+        .tab{
+            border: 2px solid;
+            height: 50px;
+            width: 70px;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+            border-radius: 20%;
+            gap: 10px;
+
+        }
+        .q,.w,.e,.r,.t,.y,.u,.i,.o,.p{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            /* gap: 10px; */
+            background-color: rgba(212 , 209, 209, 0.805);
+            color: black;
+            border-radius: 20%;
+        }
+        .index_1,.index_2,.slash{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+            /* gap: 10px; */
+            border-radius: 20%;
+            /* gap: 10px; */
+        }
+        .div4{
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .caps{
+            border: 2px solid;
+            height: 50px;
+            width: 90px;
+            border-radius: 15%;
+            /* align-content: center; */
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .a,.s,.d,.f,.g,.h,.j,.k,.l{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .semic,.qoutes{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+             background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .enter{
+            border: 2px solid;
+            height: 50px;
+            width: 60px;
+            border-radius: 20%;
+             background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .div5{
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .shift,.shift_1{
+            border: 2px solid;
+            height: 50px;
+            width: 130px;
+            border-radius: 15%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .z,.x,.c,.v,.b,.n,.m{
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .dot,.b_slash{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .div6{
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .fn,.option{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+
+        }
+        .control{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .command{
+            border: 2px solid;
+            height: 50px;
+            width: 80px;
+            border-radius: 20%;
+            background-color:rgba(212, 209, 209, 0.805);
+            color:black;
+        }
+        .space_bar{
+            border: 2px solid;
+            height: 50px;
+            width: 270px;
+            border-radius: 10%;
+            background-color:rgba(212, 209, 209, 0.805);
+            color:black;
+            /* align-self: center; */
+        }
+        .cmmd{
+            border: 2px solid;
+            height: 50px;
+            width: 80px;
+            border-radius: 10%;
+            background-color:rgba(212, 209, 209, 0.805);
+            color: black;   
+        }
+        .opt{
+            border: 2px solid;
+            height: 50px;
+            width: 50px;
+            border-radius: 10%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        p[class=space_bar]{
+            /* align-content: center; */
+            text-align: center;
+            /* justify-content: ; */
+            /* align-self: center; */
+        }
+        .ri8{
+            border: 2px solid;
+            position: relative;
+            top: 15px;
+            height: 20px;
+            width: 40px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .top{
+            border: 2px solid;
+            height: 20px;
+            width: 45px;
+            border-radius: 20%;
+            position: relative;
+            top: -10px;
+            left: -2px;
+            background-color:rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .bottom{
+            border: 2px solid;
+            height: 20px;
+            width: 45px;
+            position: relative;
+            right: 60px;
+            top: 35px;
+            left: -62px;
+            border-radius: 20%;
+            background-color: rgba(212, 209, 209, 0.805);
+            color: black;
+        }
+        .left{
+            border: 2px solid;
+            height: 20px;
+            width: 45px;
+            border-radius: 20%;
+            background-color:rgba(212, 209, 209, 0.805);
+            color:black;
+            position: relative;
+            left: -65px;
+            top: 15px;
+        }
+        p[class=top]{
+            /* align-items: center; */
+            text-align: center;
+        }
+        .key{
+            filter: drop-shadow(12px 8px 20px gray);
+            text-align: center;
+            
+        }
+        p{
+            box-shadow: 1px 8px 1px ;
+            padding-top: 1%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="key">
+        <p class="esc">esc</p>
+        <p class="f1">f1</p>
+        <p class="f2">f2</p>
+        <p class="f3">f3</p>
+        <p class="f4">f4</p>
+        <p class="f5">f5</p>
+        <p class="f5">f5</p>
+        <p class="f6">f6</p>
+        <p class="f7">f7</p>
+        <p class="f8">f8</p>
+        <p class="f9">f9</p>
+        <p class="f10">f10</p>
+        <p class="f12">f11</p>
+        <p class="f12">f12</p>
+        <p class="cap">⌃</p>
+    <div class="div2">
+            <p class="similer">~</p>
+            <p class="cl_1">1</p>
+            <p class="cl_2">2</p>
+            <p class="cl_3">3</p>
+            <p class="cl_4">4</p>
+            <p class="cl_5">5</p>
+            <p class="cl_6">6</p>
+            <p class="cl_7">7</p>
+            <p class="cl_8">8</p>
+            <p class="cl_9">9</p>
+            <p class="cl_0">0</p>
+            <p class="cl_under">-</p>
+            <p class="cl_equal">=</p>
+            <p class="cl_del">delete</p>
+    </div>
+    <div class="div3">
+        <p class="tab">tab</p>
+        <p class="q">q</p>
+        <p class="w">w</p>
+        <p class="e">e</p>
+        <p class="r">r</p>
+        <p class="t">t</p>
+        <p class="y">y</p>
+        <p class="u">u</p>
+        <p class="i">i</p>
+        <p class="o">o</p>
+        <p class="p">p</p>
+        <p class="index_1">[</p>
+        <p class="index_2">]</p>
+        <p class="slash">\</p>
+    </div>
+    <div class="div4">
+        <p class="caps">capslock</p>
+        <p class="a">a</p>
+        <p class="s">s</p>
+        <p class="d">d</p>
+        <p class="d">f</p>
+        <p class="g">g</p>
+        <p class="h">h</p>
+        <p class="j">j</p>
+        <p class="k">k</p>
+        <p class="l">l</p>
+        <p class="semic">;</p>
+        <p class="qoutes">'"</p>
+        <p class="enter">enter</p>
+    </div>
+    <div class="div5">
+    <p class="shift">shift</p>
+    <p class="z">z</p>
+    <p class="x">x</p>
+    <p class="c">c</p>
+    <p class="v">v</p>
+    <p class="b">b</p>
+    <p class="n">n</p>
+    <p class="m">m</p>
+    <p class="coma",></p>
+    <p class="dot">.</p>
+    <p class="b_slash">/</p>
+    <p class="shift_1">shift</p>
+    </div>
+    <div class="div6">
+        <p class="fn">fn</p>
+        <p class="control">control</p>
+        <p class="option">option</p>
+        <p class="command">command</p>
+        <p class="space_bar">space</p>
+        <p class="cmmd">command</p>
+        <p class="opt">option</p>
+        <p class="ri8">ri8</p>
+        <p class="top">top</p>
+        <p class="bottom">bottom</p>
+        <p class="left">left</p>
+       
+    </div>
+    </div>
+</body>
+</html>
